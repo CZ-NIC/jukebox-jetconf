@@ -7,21 +7,17 @@ with codecs.open(os.path.join(here, 'README.rst'), encoding='utf-8') as readme:
     long_description = readme.read()
 
 setup(
-    name = "jetconf",
+    name = "jetconf_jukebox",
     packages = find_packages(),
     use_scm_version = True,
     setup_requires=["setuptools_scm"],
-    description = "Pure Python implementation of RESTCONF server",
+    description = "JetConf example Jukebox backend",
     long_description = long_description,
-    url = "https://gitlab.labs.nic.cz/labs/jetconf",
+    url = "https://gitlab.labs.nic.cz/labs/jetconf-jukebox",
     author = "Pavel Spirek",
     author_email = "pavel.spirek@nic.cz",
-    entry_points = {
-        "console_scripts": ["jetconf=jetconf.__main__:main"]
-    },
-    install_requires = ["yangson", "h2", "colorlog", "pyaml", "pytz"],
-    tests_require = ["pytest"],
-    keywords = ["RESTCONF", "yang", "data model", "configuration", "json"],
+    install_requires = ["jetconf"],
+    keywords = ["RESTCONF", "yang", "data model", "Jetconf"],
     classifiers = [
         "Programming Language :: Python",
         "Programming Language :: Python :: 3.5",

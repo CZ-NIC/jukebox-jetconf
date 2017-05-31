@@ -2,9 +2,9 @@ from colorlog import error, warning as warn, info
 
 from yangson.instance import InstanceRoute
 
-from .helpers import JsonNodeT, PathFormat
-from .handler_list import STATE_DATA_HANDLES, StateDataContainerHandler
-from .data import BaseDatastore
+from jetconf.helpers import JsonNodeT, PathFormat
+from jetconf.handler_list import STATE_DATA_HANDLES, StateDataContainerHandler
+from jetconf.data import BaseDatastore
 
 
 # ---------- User-defined handlers follow ----------

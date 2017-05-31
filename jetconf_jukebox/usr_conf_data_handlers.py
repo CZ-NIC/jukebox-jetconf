@@ -2,9 +2,9 @@ from colorlog import info
 from typing import List, Dict, Union, Any
 
 from yangson.instance import InstanceRoute
-from .data import BaseDatastore, DataChange
-from .helpers import ErrorHelpers, LogHelpers
-from .handler_list import CONF_DATA_HANDLES, ConfDataObjectHandler, ConfDataListHandler
+from jetconf.data import BaseDatastore, DataChange
+from jetconf.helpers import ErrorHelpers, LogHelpers
+from jetconf.handler_list import CONF_DATA_HANDLES, ConfDataObjectHandler, ConfDataListHandler
 
 JsonNodeT = Union[Dict[str, Any], List]
 epretty = ErrorHelpers.epretty

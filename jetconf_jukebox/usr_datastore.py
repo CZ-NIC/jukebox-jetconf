@@ -1,6 +1,6 @@
 from yangson.datamodel import DataModel
 
-from .data import JsonDatastore
+from jetconf.data import JsonDatastore
 
 
 class UserDatastore(JsonDatastore):
