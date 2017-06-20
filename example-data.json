@@ -1,0 +1,35 @@
+{
+    "ietf-netconf-acm:nacm":{
+        "enable-nacm":false
+    },
+    "example-jukebox:jukebox":{
+        "library":{
+            "artist":[
+                {
+                    "name":"Foo Fighters",
+                    "album":[
+                        {
+                            "name":"Wasting Light",
+                            "genre":"example-jukebox:alternative",
+                            "year":2011,
+                            "song":[
+                                {
+                                    "name":"Wasting Light",
+                                    "location":"/media/foo/a7/wasting-light.mp3",
+                                    "format":"MP3",
+                                    "length":286
+                                },
+                                {
+                                    "name":"Rope",
+                                    "location":"/media/foo/a7/rope.mp3",
+                                    "format":"MP3",
+                                    "length":259
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
