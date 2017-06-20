@@ -1,0 +1,6 @@
+{
+    "example-jukebox:input":{
+        "playlist":"Foo-One",
+        "song-number":1
+    }
+}

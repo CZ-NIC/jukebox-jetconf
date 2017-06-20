@@ -1,0 +1,17 @@
+{
+    "example-jukebox:playlist":{
+        "name":"Foo-One",
+        "description":"Trash Collection no. 1",
+        "song":[
+            {
+                "index":1,
+                "id":"/example-jukebox:jukebox/library/artist[name='Foo Fighters']/album[name='Wasting Light']/song[name='Rope']"
+            },
+            {
+                "index":2,
+                "id":"/example-jukebox:jukebox/library/artist[name='Foo Fighters']/album[name='Wasting Light']/song[name='Wasting Light']"
+            }
+        ]
+    }
+}
+
