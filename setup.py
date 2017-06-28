@@ -28,5 +28,8 @@ setup(
         "Operating System :: OS Independent",
         "Topic :: System :: Monitoring",
         "Topic :: System :: Systems Administration"
-    ]
+    ],
+    package_data = {
+        "": ["yang-library-data.json"]
+    }
 )
