@@ -4,7 +4,7 @@ from typing import List, Dict, Union, Any
 from yangson.instance import InstanceRoute
 from jetconf.data import BaseDatastore, DataChange
 from jetconf.helpers import ErrorHelpers, LogHelpers
-from jetconf.handler_list import CONF_DATA_HANDLES, ConfDataObjectHandler, ConfDataListHandler
+from jetconf.handler_base import ConfDataListHandler
 
 JsonNodeT = Union[Dict[str, Any], List]
 epretty = ErrorHelpers.epretty
@@ -41,4 +41,4 @@ class JukeboxExampleConfHandler(ConfDataListHandler):
 
 
 def register_conf_handlers(ds: BaseDatastore):
-    CONF_DATA_HANDLES.register(JukeboxExampleConfHandler(ds, "/example-jukebox:jukebox/library/artist"))
+    ds.handlers.conf.register(JukeboxExampleConfHandler(ds, "/example-jukebox:jukebox/library/artist"))

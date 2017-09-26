@@ -4,7 +4,6 @@ from yangson.instance import InstanceRoute
 from yangson.exceptions import NonexistentInstance
 
 from jetconf.helpers import JsonNodeT, PathFormat
-from jetconf.handler_list import OP_HANDLERS
 from jetconf.data import BaseDatastore
 
 
@@ -65,4 +64,4 @@ class OpHandlersContainer:
 
 def register_op_handlers(ds: BaseDatastore):
     op_handlers_obj = OpHandlersContainer(ds)
-    OP_HANDLERS.register(op_handlers_obj.jukebox_play_op, "example-jukebox:play")
+    ds.handlers.op.register(op_handlers_obj.jukebox_play_op, "example-jukebox:play")

@@ -1,9 +1,9 @@
-from colorlog import error, warning as warn, info
+from colorlog import info
 
 from yangson.instance import InstanceRoute
 
 from jetconf.helpers import JsonNodeT, PathFormat
-from jetconf.handler_list import STATE_DATA_HANDLES, StateDataContainerHandler
+from jetconf.handler_base import StateDataContainerHandler
 from jetconf.data import BaseDatastore
 
 
@@ -56,6 +56,6 @@ def register_state_handlers(ds: BaseDatastore):
     esh = JukeboxExampleStateHandler(ds, "/example-jukebox:jukebox/library/artist-count")
     esh_ac = JukeboxExampleStateHandlerAc(ds, "/example-jukebox:jukebox/library/album-count")
     esh_sc = JukeboxExampleStateHandlerSc(ds, "/example-jukebox:jukebox/library/song-count")
-    STATE_DATA_HANDLES.register(esh)
-    STATE_DATA_HANDLES.register(esh_ac)
-    STATE_DATA_HANDLES.register(esh_sc)
+    ds.handlers.state.register(esh)
+    ds.handlers.state.register(esh_ac)
+    ds.handlers.state.register(esh_sc)
