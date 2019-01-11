@@ -31,7 +31,7 @@
       },
       {
         "name": "example-jukebox",
-        "revision": "2016-08-15",
+        "revision": "2019-01-09",
         "namespace": "urn:ietf:params:xml:ns:yang:example-jukebox",
         "conformance-type": "implement",
         "schema": "https://github.com/YangModels/yang/blob/master/standard/ietf/DRAFT/example-jukebox.yang"
