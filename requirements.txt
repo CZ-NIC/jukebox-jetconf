@@ -1,1 +1,1 @@
-jetconf
+git+ssh://git@gitlab.labs.nic.cz/labs/jetconf.git#egg=jetconf
